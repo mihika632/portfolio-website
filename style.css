@@ -16,7 +16,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/bg.jpg);
+    background-image: url(images/bg1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -33,7 +33,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 80px; /* Adjusted height */
+    height: 80px;
 }
 
 .logo {
@@ -75,20 +75,20 @@ nav ul li a:hover::after {
     margin-top: 20%;
     text-align: left;
     font-size: 30px;
-    padding-left: 10%; /* Added for left alignment */
+    padding-left: 10%; 
 }
 
 .header-text p {
-    color: #444141; /* Greyish color */
-    font-size: 17px; /* Smaller font size */
+    color: #444141; 
+    font-size: 20px; 
     margin-bottom: 0px;
-    margin-left: -5px;
+    margin-left: -40px;
 }
 
 .header-text h1 {
     font-size: 60px;
-    margin-top: 10px; /* Adjusted margin */
-    margin-left: -5%; /* Moved slightly to the left */
+    margin-top: 10px; 
+    margin-left: -5%; 
 }
 
 .header-text h1 span {
@@ -96,8 +96,6 @@ nav ul li a:hover::after {
 }
 
 
-
-/* about */
 #about{
     padding: 80px 0;
     color: #fff;
@@ -113,7 +111,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
   
-    background-color: #f0f0f0; /* Just for visual clarity */
+    background-color: #f0f0f0; 
 }
 
 
@@ -125,27 +123,28 @@ nav ul li a:hover::after {
    
 }
 .about-col-1 {
-    flex-basis: 40%; /* Adjusted width to 40% for the image column */
-    text-align: center; /* Center align image and content vertically */
+    flex-basis: 40%; 
+    text-align: center; 
 }
 
 
 .about-col-2 {
     flex-basis: 50%;
-    text-align: left; /* Align text to the right */
-    color: #fff; /* Set paragraph text color to white */
+    text-align: right; 
+    color: #fff; 
     margin-top: 20px; 
     padding-left: 20px;
 }
+
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    display: inline-block; /* Ensures the circle background spans the title */
-   
-    color: #fff; /* Title text color */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 50%; /* Makes the circle shape */
-    margin-bottom: 30px; /* Added margin for spacing */
+    display: inline-block; 
+ 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%; 
+    margin-bottom: 30px;
 }
 .sub-title div p{
     text-align: center;
@@ -159,6 +158,7 @@ nav ul li a:hover::after {
     position: relative;
     margin-bottom: 5px;
     margin-top: 8px;
+    
 }
 .tab-links::after{
     content: '';
@@ -169,6 +169,7 @@ nav ul li a:hover::after {
     left: 0;
     bottom: -8px;
     transition: 0.5s;
+    text-align: start;
 
 }
 
@@ -191,12 +192,13 @@ nav ul li a:hover::after {
     }
 .tab-contents{
     display: none;
+    justify-content: flex-start;
 }
 .tab-contents.active-tab{
     display: block;
 }
 
-/* services */
+
 #services{
     padding: 30px 0;
 }
@@ -387,14 +389,3 @@ form.btn2{
     display: block;
 }
 
-/* css for small screen */
-
-@media only screen and (max-width:600px){
-    /* .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    } */
-}
